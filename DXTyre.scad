@@ -1,5 +1,5 @@
 $fn=200;
-DXTyre(80,200,0);
+DXTyre(0,0,0);
 module DXTyre(x,y,z){
 	translate([x,y,z]){
 		union(){

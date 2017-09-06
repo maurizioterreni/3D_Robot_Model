@@ -1,5 +1,5 @@
-//$fn=70;
-SXTyre(80,-200,0);
+$fn=200;
+SXTyre(0,0,0);
 module SXTyre(x,y,z){
 	translate([x,y,z]){
 		union(){

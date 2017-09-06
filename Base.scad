@@ -2,7 +2,7 @@ use<Library/M2.scad>
 
 $fn=200;
 
-Base(-150,-200,-40);
+Base(0,0,0);
 
 module Base(x,y,z){
     difference() {
