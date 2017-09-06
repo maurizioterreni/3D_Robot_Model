@@ -2,7 +2,11 @@ x = 0;
 y = 0;
 z = 0;
 
-translate([x + 80,y + 200,z + 0]){
+translate([x + 80,y + 150,z + 0]){
+    import ("stl/SupportoCuscinetto.stl", convexity = 4);
+}
+
+translate([x + 80,y - 150,z + 0]){
     import ("stl/SupportoCuscinetto.stl", convexity = 4);
 }
 

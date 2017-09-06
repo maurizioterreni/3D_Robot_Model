@@ -8,7 +8,7 @@ module SXTyre(x,y,z){
 					cylinder(h=40, r=100);
 					cylinder(h=40, r=85);
 				}
-				color("blue") cylinder(h=70, r=20);
+				color("blue") cylinder(h=100, d=20);
 				translate(v=[0,0,10]) {
 					cylinder(h=5, r=100);
 				}
