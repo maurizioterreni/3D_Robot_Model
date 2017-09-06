@@ -17,12 +17,9 @@ translate([x + 80,y + 200,z - 5]){
 translate([x + 80,y - 200,z - 5]){
     import ("stl/SXTyre.stl", convexity = 4);
 }
-    
+ 
 translate([x - 150,y - 200,z - 40]){
     import ("stl/Base.stl", convexity = 4);
 }
-
-
-
 
 

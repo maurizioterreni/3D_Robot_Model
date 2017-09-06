@@ -1,8 +1,12 @@
 use<Library/M2.scad>
+use<Library/M3.scad>;
 
 $fn=200;
 
-Base(0,0,0);
+//difference(){
+    Base(0,0,0);
+    dadiCuscinetti(0,0,0);
+//}
 
 module Base(x,y,z){
     difference() {
@@ -57,4 +61,30 @@ module Base(x,y,z){
 			}
 		}
 	}
+}
+
+module dadiCuscinetti(x,y,z){
+    x = x - 150;
+    y = y - 200;
+    z = z - 40;
+    translate([x+48,y - 141,z - 40]){
+        rotate([0,,180,0]){
+            BoltM3(l=60, inset=1);
+        }
+    }
+    translate([x+112,y - 141,z - 40]){
+        rotate([0,,180,0]){
+            BoltM3(l=60, inset=1);
+        }
+    }
+    translate([x+112,y + 144,z - 40]){
+        rotate([0,,180,0]){
+            BoltM3(l=60, inset=1);
+        }
+    }
+    translate([x+48,y + 144,z - 40]){
+        rotate([0,,180,0]){
+            BoltM3(l=60, inset=1);
+        }
+    }
 }
