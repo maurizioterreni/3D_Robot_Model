@@ -1,4 +1,5 @@
-use <../Library/M3.scad>;
+use <M2.scad>;
+use <M3.scad>;
 $fn=200;
 
 cuscinetto(0,0,0);
@@ -34,12 +35,20 @@ module cuscinetto(x,y,z){
       }
       rotate([0,270,0]){
         translate([x+6, y+32, z+7]){
-            BoltM3(l=32, inset=1);
+           //BoltM3(l=32, inset=1);
+              translate([0,0,-40]){
+                    cylinder(h=40, r=1.5,$fn=100);
+              }
+              NutM2(tolerance=0);
         }
       }
       rotate([0,270,0]){
           translate([z+6, y-32, z+7]){
-              BoltM3(l=32, inset=1);
+              //BoltM3(l=32, inset=1);
+              translate([0,0,-40]){
+                    cylinder(h=40, r=1.5,$fn=100);
+              }
+              NutM2(tolerance=0);
           }
       }
     }
